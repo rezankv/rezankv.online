@@ -1,0 +1,54 @@
+/* 
+colors
+fonts
+borders
+shadows
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* colors */
+    --background-default: hsl(0, 0%, 7%);
+    --background-paper: hsl(240, 2%, 12%);
+    --background-paper-light: hsl(240, 1%, 17%);
+
+    --text-primary-default: hsl(0, 0%, 98%);
+    --text-primary-mutate: hsla(0, 0%, 84%, 0.7);
+    --text-secondary-default: hsl(45, 100%, 72%);
+    --text-body: hsl(0, 0%, 84%);
+
+    --link-default: hsl(45, 54%, 58%);
+
+    --border-color-default: hsl(0, 0%, 22%);
+
+    --horizontal-separator-default: hsl(0, 0%, 22%);
+
+    /* border radius */
+    --border-radius-md: 20px;
+
+    /* box shadows */
+    --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
+    --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
+    --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
+    --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
+
+    /* transitions */
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease-in-out;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    @apply bg-background;
+    @apply text-text-primary;
+  }
+}

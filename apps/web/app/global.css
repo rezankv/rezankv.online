@@ -60,7 +60,7 @@
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
+  --eerie-black-2: hsl(240, 2%, 12%); 
   --smoky-black: hsl(0, 0%, 7%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
@@ -68,7 +68,7 @@
   --white-4: #fff;
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
+  --light-gray: hwb(0 84% 16%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --light-gray-80: hsla(0, 0%, 95%, 0.8);
   --light-gray-60:#d1d5dbcc;
@@ -168,7 +168,6 @@ textarea {
 :focus {
   outline-color: var(--orange-yellow-crayola);
 }
-
 html {
   font-family: var(--ff-vazirmatn);
 }
@@ -177,9 +176,13 @@ body {
   background: var(--smoky-black);
 }
 
+
+
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
+/* DONE */
 
 .sidebar,
 article {
@@ -190,6 +193,7 @@ article {
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
+
 
 .separator {
   width: 100%;
@@ -371,7 +375,7 @@ main {
 }
 
 .info-content .title {
-  color: var(--white-1);
+  color: var(--white-2);
   background: var(--onyx);
   font-size: var(--fs-8);
   font-weight: var(--fw-300);

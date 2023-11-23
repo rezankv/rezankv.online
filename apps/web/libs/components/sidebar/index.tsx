@@ -7,7 +7,7 @@ export const Sidebar = () => {
   const { toggleSidebarHandler, isOpen } = useLogic();
   return (
     <aside
-      className={cn('sidebar', isOpen ? 'active' : '')}
+      className={cn('sidebar bg-background-paper ', isOpen ? 'active' : '')}
       onClick={toggleSidebarHandler}
     >
       <div className="sidebar-info">
